@@ -1,21 +1,27 @@
-public class LeftTrianglePattern  
-{    
-public static void main(String args[])   
-{    
-int i, j, row = 6;       
+import java.util.Scanner;
+public class LeftTrianglePattern
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
  
-for (i=0; i<row; i++)   
-{  
-      
-for (j=2*(row-i); j>=0; j--)         
-{       
-System.out.print(" ");   
-}    
-for (j=0; j<=i; j++ )   
-{    
-System.out.print("* ");   
-}   
-System.out.println();   
-}   
-}   
-}  
+        System.out.println("Enter number of rows: ");
+ 
+        int rows = sc.nextInt();
+         
+        for (int i= 0; i<= rows; i++)
+        {
+            for (int j=1; j<=rows-i; j++)
+            {
+                System.out.print(" ");
+            }
+            for (int k=0;k<=i;k++)
+            {
+                System.out.print("*");
+            } 
+                System.out.println("");
+        }
+        sc.close();
+ 
+    }
+}
