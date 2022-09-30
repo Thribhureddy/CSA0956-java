@@ -1,3 +1,0 @@
-cd C:\Users\thrib\OneDrive\Desktop\thribu programs
-javac filename.java
-java filename
